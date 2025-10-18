@@ -68,31 +68,31 @@ h1 {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 8px; /* better spacing on small screens */
+  gap: 10px; /* improved spacing */
   flex-wrap: wrap;
 }
 
 input {
-  padding: 6px;
+  padding: 10px;          /* bigger padding */
   border-radius: 6px;
   border: none;
   outline: none;
-  width: 150px;
+  width: 200px;           /* bigger width */
   text-align: center;
   background-color: #2a1800;
   color: white;
-  font-size: 16px;
+  font-size: 20px;        /* bigger font */
 }
 
 button {
   background-color: #ff8c00;
   border: none;
   color: #000;
-  padding: 6px 12px;
+  padding: 10px 16px;     /* bigger button */
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button:hover {
@@ -117,7 +117,7 @@ button:hover {
 /* Prevent zoom on mobile input */
 input,
 button {
-  font-size: 16px; /* prevents zoom */
+  font-size: 16px; /* prevents zoom on mobile */
 }
 
 /* Make layout mobile-friendly */
@@ -145,7 +145,14 @@ button {
   }
 
   input {
-    width: 120px;
+    width: 160px;       /* smaller for mobile */
+    font-size: 18px;    /* readable on small screens */
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 12px;  /* smaller for mobile */
+    font-size: 16px;
   }
 
   h1 {
