@@ -108,3 +108,49 @@ body {
     margin-top: 15px;
   }
   
+
+/* Prevent zoom on mobile input */
+input,
+button {
+  font-size: 16px; /* prevents zoom */
+}
+
+/* Make layout mobile-friendly */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .game-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #grid {
+    grid-template-columns: repeat(5, 40px);
+    grid-gap: 4px;
+  }
+
+  .tile {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  input {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #message {
+    font-size: 18px;
+  }
+
+  .large-message {
+    font-size: 22px;
+  }
+}
