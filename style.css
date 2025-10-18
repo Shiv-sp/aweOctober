@@ -1,0 +1,110 @@
+body {
+    background-color: #120a00;
+    color: #ffa500;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: #1c1002;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 140, 0, 0.6);
+    width: 350px;
+  }
+  
+  h1 {
+    text-shadow: 0 0 15px #ff8c00;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ff8c00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .correct {
+    background-color: #4CAF50; /* green */
+    border-color: #4CAF50;
+  }
+  
+  .present {
+    background-color: #FFD700; /* yellow */
+    border-color: #FFD700;
+    color: #000;
+  }
+  
+  .absent {
+    background-color: #3a3a3c; /* gray */
+    border-color: #3a3a3c;
+    color: #ccc;
+  }
+  
+  .input-area {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 150px;
+    text-align: center;
+    background-color: #2a1800;
+    color: white;
+  }
+  
+  button {
+    background-color: #ff8c00;
+    border: none;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  button:hover {
+    background-color: #ffaa33;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffa500;
+    text-shadow: 0 0 12px #ff8c00;
+  }
+  
+  .large-message {
+    font-size: 26px;
+    color: #ffae00;
+    text-shadow: 0 0 20px #ff8c00;
+    margin-top: 15px;
+  }
+  
